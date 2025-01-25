@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faculty Profile Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Faculty Profile Management</h1>
+
+    <!-- Form to Add a Faculty Profile -->
+    <div class="form-container">
+      <h2>Add New Faculty</h2>
+      <form id="facultyForm">
+        <input type="text" id="name" placeholder="Name" required />
+        <input type="text" id="department" placeholder="Department" required />
+        <input type="text" id="designation" placeholder="Designation" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="text" id="phone" placeholder="Phone" required />
+        <button type="submit">Add Faculty</button>
+      </form>
+    </div>
+
+    <!-- Generate Report Button with Lock symbol -->
+    <button id="generateReport" class="generate-report">
+      <span class="lock-symbol">🔒</span> Generate Report
+    </button>
+
+    <!-- Report Section -->
+    <div id="reportSection" class="report-section" style="display: none;">
+      <h3>Generated Report</h3>
+      <pre id="reportContent"></pre>
+      <button id="clearReport" class="clear-report">Clear All</button>
+    </div>
+
+    <!-- Faculty List Section (Initially hidden) -->
+    <ul id="facultyList" style="display: none;"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
