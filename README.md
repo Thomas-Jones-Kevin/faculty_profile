@@ -35,7 +35,7 @@ Make sure you have the following installed on your system:
     ```
 
     This will start the backend server on your local machine.
-
+   
 ### Additional Notes
 
 - Ensure that MongoDB is running on your system, or use a cloud MongoDB service like [MongoDB Atlas](https://www.mongodb.com/cloud/atlas) for database hosting.
